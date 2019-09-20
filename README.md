@@ -1,3 +1,3 @@
 > To-Do list React App
 
-![Logo Project](https://icon-library.net/images/todo-list-icon/todo-list-icon-15.jpg)
+![Logo Project](https://www.pinclipart.com/picdir/big/109-1098464_to-do-list-comments-list-to-do-icon.png)
