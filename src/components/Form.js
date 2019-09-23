@@ -1,14 +1,20 @@
 import React, {useState, useContext} from 'react'
 import {AlertContext} from "../context/alert/alertContext";
 
-export const Form =() => {
+export const Form = () => {
     const [value, setValue] = useState('')
     const alert = useContext(AlertContext)
 
     const submitHandler = event => {
         event.preventDefault()
 
-        alert.show(value, 'success')
+        if (value.trim()) {
+            //...
+            alert.show('Note was created', 'success')
+            setValue('')
+        } else {
+            alert.show('Note not created, enter note name!')
+        }
     }
 
     return(
@@ -17,7 +23,7 @@ export const Form =() => {
         <input
             type="text"
             className="form-control"
-            placeholder="Enter note name"
+            placeholder="Enter note name ..."
             value={value}
             onChange={e => setValue(e.target.value)}
             />

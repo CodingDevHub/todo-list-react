@@ -11,7 +11,7 @@ export const Alert = () => {
 
     return (
         <div className={`alert alert-${alert.type || 'warning'} alert-dismissible`}>
-            <strong>Attention!&nbsp;</strong>
+            <strong>Notify! &nbsp;</strong>
             {alert.text}
             <button onClick={hide} type="button" className="close" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
