@@ -17,6 +17,8 @@ export const Home = () => {
         <Fragment>
             <Form />
 
+            <hr />
+
             {loading
             ? <Loader />
             : <Notes notes={notes} />
