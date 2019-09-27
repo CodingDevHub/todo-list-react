@@ -29,7 +29,7 @@ code {
   opacity: 0;
 }
 
-.alert-enter-active{
+.alert-enter-active {
   transition: opacity 500ms ease-out;
   opacity: 1;
 }
@@ -41,6 +41,10 @@ code {
 
 .note-exit-active {
   animation: note 800ms ease-out forwards;
+}
+
+.note-enter-active {
+  animation: note 500ms ease-in alternate-reverse;
 }
 
 @keyframes note {
